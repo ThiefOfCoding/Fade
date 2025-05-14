@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZigZag Border Animation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<section class="container">
+  <section class="section__container">
+    <!--==================== ZigZag Border Animation ====================-->
+    <div class="zigzag__container">
+      <div class="zigzag__item" style="--i: 0;" onclick="showFriends()"><span><b>F</b></span></div>
+      <div class="zigzag__item" style="--i: 1;" onclick="showDescription()"><span><b>A</b></span></div>
+      <div class="zigzag__item" style="--i: 2;" onclick="showGallery()"><span><b>D</b></span></div>
+      <div class="zigzag__item" style="--i: 2;" onclick="window.open('http://xat.com/editme', '_blank')"><span><b>E</b></span></div>
+    </div>
+    <div class="zigzag__container">
+    </div>
+  </section>
+</section>
+
+<!-- Modal for About Me -->
+<div id="description" class="modal">
+  <div class="modal-content glassmorphism">
+    <span class="close" onclick="closeModal('description')">&times;</span>
+    <h2>About me.</h2>
+    <p>Hello, my name is Miguel, I’m from Ecuador, but I live in Spain, I’m 29 years old, I love soccer and going for a run.<br><br>𝘍𝘢𝘥𝘦</p>
+  </div>
+</div>
+
+<!-- Modal for Gallery -->
+<div id="gallery" class="modal">
+  <div class="modal-content glassmorphism">
+    <span class="close" onclick="closeModal('gallery')">&times;</span>
+    <h2>Gallery</h2>
+    <div class="gallery-images">
+      <img src="https://xatimg.com/image/WxO6wmmvWQol.jpg" alt="Image 1">
+      <p style="text-align:center;">𝘍𝘢𝘥𝘦</p>
+    </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
